@@ -38,5 +38,5 @@ class FleetVehicle(models.Model):
         return res
 
     # Fields
-    # Many2one
+    #
     department = fields.Many2one('hr.department', default=_get_user_department)
