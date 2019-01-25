@@ -16,7 +16,7 @@
 #
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
+# Khaled Hathout
 #
 
 from openerp import api, fields, models
@@ -38,5 +38,5 @@ class FleetVehicle(models.Model):
         return res
 
     # Fields
-    #
+    # Many to one
     department = fields.Many2one('hr.department', default=_get_user_department)
